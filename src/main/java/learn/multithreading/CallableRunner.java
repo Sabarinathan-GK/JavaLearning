@@ -2,7 +2,7 @@ package learn.multithreading;
 
 import java.util.concurrent.*;
 
-class CallableTask implements Callable{
+class CallableTask implements Callable<String>{
     private String name;
 
     public CallableTask(String name) {
@@ -10,7 +10,7 @@ class CallableTask implements Callable{
     }
 
     @Override
-    public Object call() throws Exception {
+    public String call() throws Exception {
         Thread.sleep(1000);
         return "Hello "+ name ;
     }

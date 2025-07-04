@@ -27,5 +27,6 @@ public class MultipleCallableRunner {
         for (Future result : results){
             System.out.println(result.get());
         }
+        executorService.shutdown();
     }
 }
