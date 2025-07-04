@@ -1,5 +1,14 @@
 package learn.multithreading;
 
+/** THREAD CYCLE
+ * NEW
+ * RUNNABLE
+ * RUNNING
+ * BLOCKED / WAITING
+ * TERMINATED / DEAD
+ **/
+
+
 class TaskOne extends Thread{
     public void run(){
         System.out.print("\tTask 1 is Started");
