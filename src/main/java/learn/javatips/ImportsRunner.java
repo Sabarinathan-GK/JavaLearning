@@ -12,6 +12,6 @@ public class ImportsRunner {
         /** String in the package of Lang. import java.lang.* is the default imports. it will automatically imported. **/
         BigDecimal bgDecimalValue = new BigDecimal(100);
         out.println("Static Import");
-        sort(new ArrayList<>());
+        //sort(new ArrayList<>());
     }
 }
