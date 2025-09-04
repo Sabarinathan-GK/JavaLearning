@@ -8,15 +8,15 @@ public class PatternMatchingRunner {
         Object objString = "Animal";
         oldVerInstanceOf(objString);
         newVerInstanceOf(objString);
-        printTransactionNew(new Transaction("Sabari","Mani",1_00_000));
+        printTransactionOld(new Transaction("Sabari","Mani",1_00_000));
     }
-    private static void printTransactionNew(Object obj){
+    /*private static void printTransactionNew(Object obj){
         if(obj
                 instanceof
                 Transaction(String sender, String receiver, int amount)){
             System.out.println(sender +" "+receiver+" "+amount);
         }
-    }
+    }*/
     private static void printTransactionOld(Object obj){
         if(obj instanceof Transaction trans){
             String sender = trans.sender();
